@@ -1,1 +1,84 @@
-ScioAI.com
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>ScioAI</title>
+  <meta name="description" content="AI Enterprise Knowledge Management">
+  <meta name="author" content="team@scioai.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,500">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="icon" type="image/png" href="./assets/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="./assets/favicon-16x16.png" sizes="16x16" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="bg">
+  <script type="text/javascript">
+  var submitted = false;
+  </script>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img class="logo" src="./assets/logo.svg" alt="" />
+        <img class="logo" src="./assets/SCIO.svg" alt="" />
+      </div>
+      <!-- /.column -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+      <div class="column">
+        <h2 class="slogan">AI enterprise knowledge management</h2>
+      </div>
+      <!-- /.column column-70 column-offset-15 -->
+    </div>
+    <!-- /.row -->
+    <div id="gone">
+      <div class="row">
+        <div class="column">
+          <p class="desc">
+            Create your knowledge base effortlessly with the power of AI.
+            <br /> Learn how ScioAI captures knowledge continuously, saving you the time and money.
+          </p>
+        </div>
+        <!-- /.column -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="column" id="mob">
+          <p class="sign">
+            Sign up and get beta access when we launch ⟼
+          </p>
+          <!-- /.sign -->
+          <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSe5kWCcRb7nCBpbwehy_GzTl0BpygrOpzxa0lrpv5CtSokhyw/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+            <input type="submit" value="Let's go!" id="go" class="float-right">
+            <div class="line">
+              <input id="email" type="email" placeholder="Email address" name="entry.217710085" id="entry.217710085" required>
+            </div>
+            <!-- /.line -->
+          </form>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+        </div>
+        <!-- /.column -->
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <div class="column">
+          <span class="clean">You can unsubscribe at any time. We keep your email safe and don't send spam. </span>
+        </div><!-- /.column -->
+      </div><!-- /.row -->
+    </div>
+    <!-- /.gone -->
+  </div>
+  <!-- /.container -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript">
+  $('#gone').on('submit', function(e) {
+    $('#gone *').fadeOut(500);
+    $('#gone').prepend('<div class="row"><div class="column" id="mob"><p class="info"><strong>Thanks and welcome to ScioAI!</strong><br /><br />You will receive occasional info on the product and <br /> be invited to participate in its creation.<br /> Here is an info advance:</p><blockquote><p>ScioAI scans email, chats, git repositories, bug reports and other data to extract and select key ideas to incorporate into your knowledge base. Email integration is our current priority.</p></blockquote></div></div>');
+  });
+  </script>
+</body>
+
+</html>
